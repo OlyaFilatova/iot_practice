@@ -2,7 +2,7 @@
 
 ## Projects
 
-1. 
+1. [Device Management](./project_1/README.md)
 
 ## My Learning Path
 
