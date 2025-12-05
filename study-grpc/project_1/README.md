@@ -1,8 +1,8 @@
-This project based on examples given in gRPC documentation.
+# gRPC python key knowledge
 
-I'm updating it while reading docs.
+This project showcases knowledge from gRPC documentation given at https://grpc.io/docs/languages/python/.
 
-## Setup
+## Running project
 
 ### Create virtual environment
 
@@ -14,18 +14,23 @@ pip install -r requirements.txt
 
 ### Start server
 
-`python python/device_management_server.py`
+`python -m device_controller.server.entrypoint`
 
 ### Run client
 
-`python python/device_management_client.py`
+`python -m device_controller.client.entrypoint`
 
-### Update after proto edit
+## Update after proto edit
 
-from project_1 folder run:
+`python -m grpc_tools.protoc -Idevice_controller/grpc_python=device_controller/protos --python_out=. --grpc_python_out=. --pyi_out=. device_controller/protos/device_controller.proto`
 
-`python -m grpc_tools.protoc -I=./protos --python_out=./python/ --pyi_out=./python/ --grpc_python_out=./python/ ./protos/device_management.proto`
+## Changelog
 
-### Changelog
+- [2025/12/05](./changelog/log_20251205.md)
+- [2025/12/04](./changelog/log_20251204.md)
 
-[2025/12/04](./changelog/log_20251204.md)
+## Learninglog
+
+- [2025/12/05](../learninglog/log_20251205.md)
+- [2025/12/04](../learninglog/log_20251204.md)
+- [2025/12/03](../learninglog/log_20251203.md)
