@@ -4,9 +4,9 @@
 
 - [ ] gRPC guides
     - [x] https://grpc.io/docs/guides/auth/
-    - [ ] https://grpc.io/docs/guides/benchmarking/
-    - [ ] https://grpc.io/docs/guides/cancellation/
-    - [ ] https://grpc.io/docs/guides/compression/
+    - [x] https://grpc.io/docs/guides/benchmarking/
+    - [x] https://grpc.io/docs/guides/cancellation/
+    - [x] https://grpc.io/docs/guides/compression/
     - [ ] https://grpc.io/docs/guides/custom-backend-metrics/
     - [ ] https://grpc.io/docs/guides/custom-load-balancing/
     - [ ] https://grpc.io/docs/guides/custom-name-resolution/
@@ -32,9 +32,9 @@
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/helloworld
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/route_guide
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/auth
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/cancellation
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/compression
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/async_streaming
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/cancellation
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/compression
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/data_transmission
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/debug
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/errors
