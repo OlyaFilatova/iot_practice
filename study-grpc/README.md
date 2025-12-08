@@ -6,7 +6,7 @@
 
 ## My Learning Path
 
-Here I'm logging my per day learning experience [learninglog/readme.md](learninglog/readme.md). Notes, links, etc.
+Here I'm logging my per day learning experience [learninglog/readme.md](learninglog/README.md). Notes, links, etc.
 
 ## Documentation and other important links
 

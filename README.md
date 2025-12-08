@@ -1,3 +1,3 @@
 # Topics related to IoT that I'm studying
 
-[gRPC study](./study-grpc/readme.md)
+[gRPC study](./study-grpc/README.md)

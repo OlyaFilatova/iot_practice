@@ -1,8 +1,9 @@
+## In progress
+
 ### gRPC docs
-- [ ] Rewrite project_1 using async approach
 
 - [ ] gRPC guides
-    - [ ] https://grpc.io/docs/guides/auth/
+    - [x] https://grpc.io/docs/guides/auth/
     - [ ] https://grpc.io/docs/guides/benchmarking/
     - [ ] https://grpc.io/docs/guides/cancellation/
     - [ ] https://grpc.io/docs/guides/compression/
@@ -26,6 +27,37 @@
     - [ ] https://grpc.io/docs/guides/service-config/
     - [ ] https://grpc.io/docs/guides/status-codes/
     - [ ] https://grpc.io/docs/guides/wait-for-ready/
+
+- [ ] gRPC python examples
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/helloworld
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/route_guide
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/auth
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/async_streaming
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/cancellation
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/compression
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/data_transmission
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/debug
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/errors
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/flow_control
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/health_checking
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/hellostreamingworld
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/interceptors
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/keep_alive
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/lb_policies
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/metadata
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/multiplex
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/multiprocessing
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/no_codegen
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/observability
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/retry
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/timeout
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/uds
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/wait_for_ready
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/xds
+
+## Future
+
+### gRPC docs
 
 - [ ] python gRPC reference https://grpc.io/docs/languages/python/api/
 
@@ -159,63 +191,63 @@
     - https://www.diva-portal.org/smash/resultList.jsf?dswid=3728&language=en&searchType=SIMPLE&query=grpc&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all
 
 - [ ] Check CPP docs for additional info
-        - [ ] https://grpc.io/docs/languages/cpp/
-        - [ ] https://grpc.io/docs/languages/cpp/alts/
-        - [ ] https://grpc.io/docs/languages/cpp/api/
-        - [ ] https://grpc.io/docs/languages/cpp/async/
-        - [ ] https://grpc.io/docs/languages/cpp/basics/
-        - [ ] https://grpc.io/docs/languages/cpp/best_practices/
-        - [ ] https://grpc.io/docs/languages/cpp/callback/
-        - [ ] https://grpc.io/docs/languages/cpp/quickstart/
-        - [ ] https://protobuf.dev/getting-started/cpptutorial/
-        - [ ] https://protobuf.dev/reference/cpp/
-        - [ ] https://protobuf.dev/reference/cpp/abseil/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs-link/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.arena/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.common/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.code_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.command_line_interface/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.cpp_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.csharp_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.csharp_names/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.importer/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.java_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.java_names/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.javanano_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.js_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.objectivec_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.objectivec_helpers/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.parser/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.plugin.pb/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.plugin/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.python_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.ruby_generator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor_database/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor.pb/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.dynamic_message/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.coded_stream/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.gzip_stream/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.printer/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.tokenizer/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.zero_copy_stream_impl_lite/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.zero_copy_stream_impl/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.zero_copy_stream/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.map/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.message_lite/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.message/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.repeated_field/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.service/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.text_format/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.unknown_field_set/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.field_comparator/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.field_mask_util/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.json_util/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.message_differencer/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.time_util/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.type_resolver_util/
-        - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.type_resolver/
-        - [ ] https://protobuf.dev/reference/cpp/arenas/
-        - [ ] https://protobuf.dev/reference/cpp/cpp-generated/
-        - [ ] https://protobuf.dev/reference/cpp/string-view/
+    - [ ] https://grpc.io/docs/languages/cpp/
+    - [ ] https://grpc.io/docs/languages/cpp/alts/
+    - [ ] https://grpc.io/docs/languages/cpp/api/
+    - [ ] https://grpc.io/docs/languages/cpp/async/
+    - [ ] https://grpc.io/docs/languages/cpp/basics/
+    - [ ] https://grpc.io/docs/languages/cpp/best_practices/
+    - [ ] https://grpc.io/docs/languages/cpp/callback/
+    - [ ] https://grpc.io/docs/languages/cpp/quickstart/
+    - [ ] https://protobuf.dev/getting-started/cpptutorial/
+    - [ ] https://protobuf.dev/reference/cpp/
+    - [ ] https://protobuf.dev/reference/cpp/abseil/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs-link/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.arena/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.common/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.code_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.command_line_interface/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.cpp_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.csharp_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.csharp_names/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.importer/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.java_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.java_names/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.javanano_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.js_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.objectivec_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.objectivec_helpers/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.parser/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.plugin.pb/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.plugin/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.python_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.compiler.ruby_generator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor_database/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor.pb/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.dynamic_message/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.coded_stream/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.gzip_stream/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.printer/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.tokenizer/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.zero_copy_stream_impl_lite/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.zero_copy_stream_impl/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.io.zero_copy_stream/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.map/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.message_lite/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.message/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.repeated_field/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.service/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.text_format/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.unknown_field_set/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.field_comparator/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.field_mask_util/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.json_util/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.message_differencer/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.time_util/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.type_resolver_util/
+    - [ ] https://protobuf.dev/reference/cpp/api-docs/google.protobuf.util.type_resolver/
+    - [ ] https://protobuf.dev/reference/cpp/arenas/
+    - [ ] https://protobuf.dev/reference/cpp/cpp-generated/
+    - [ ] https://protobuf.dev/reference/cpp/string-view/
