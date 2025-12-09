@@ -6,6 +6,7 @@ In this folder I'm storing what pages I have read, noting key points, possible f
 
 ## learninglogs
 
+- [log_20251209.md](./log_20251209.md)
 - [log_20251208.md](./log_20251208.md)
 - [log_20251205.md](./log_20251205.md)
 - [log_20251204.md](./log_20251204.md)

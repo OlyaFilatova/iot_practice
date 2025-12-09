@@ -7,26 +7,27 @@
     - [x] https://grpc.io/docs/guides/benchmarking/
     - [x] https://grpc.io/docs/guides/cancellation/
     - [x] https://grpc.io/docs/guides/compression/
-    - [ ] https://grpc.io/docs/guides/custom-backend-metrics/
-    - [ ] https://grpc.io/docs/guides/custom-load-balancing/
-    - [ ] https://grpc.io/docs/guides/custom-name-resolution/
-    - [ ] https://grpc.io/docs/guides/deadlines/
-    - [ ] https://grpc.io/docs/guides/debugging/
-    - [ ] https://grpc.io/docs/guides/error/
-    - [ ] https://grpc.io/docs/guides/flow-control/
-    - [ ] https://grpc.io/docs/guides/health-checking/
+    - [x] https://grpc.io/docs/guides/deadlines/
+    - [x] https://grpc.io/docs/guides/debugging/
+    - [x] https://grpc.io/docs/guides/error/
+    - [x] https://grpc.io/docs/guides/flow-control/ (python cannot override the flow control)
+    - [x] https://grpc.io/docs/guides/health-checking/
     - [ ] https://grpc.io/docs/guides/interceptors/
     - [ ] https://grpc.io/docs/guides/keepalive/
     - [ ] https://grpc.io/docs/guides/metadata/
     - [ ] https://grpc.io/docs/guides/opentelemetry-metrics/
     - [ ] https://grpc.io/docs/guides/performance/
     - [ ] https://grpc.io/docs/guides/reflection/
-    - [ ] https://grpc.io/docs/guides/request-hedging/
     - [ ] https://grpc.io/docs/guides/retry/
-    - [ ] https://grpc.io/docs/guides/server-graceful-stop/
+    - [ ] https://grpc.io/docs/guides/server-graceful-stop/ (no python example listed)
     - [ ] https://grpc.io/docs/guides/service-config/
     - [ ] https://grpc.io/docs/guides/status-codes/
     - [ ] https://grpc.io/docs/guides/wait-for-ready/
+    - **not supported on Python**
+        - [x] https://grpc.io/docs/guides/custom-backend-metrics/ 
+        - [x] https://grpc.io/docs/guides/custom-load-balancing/
+        - [ ] https://grpc.io/docs/guides/custom-name-resolution/ 
+        - [ ] https://grpc.io/docs/guides/request-hedging/
 
 - [ ] gRPC python examples
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/helloworld
@@ -34,25 +35,27 @@
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/auth
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/cancellation
     - [x] https://github.com/grpc/grpc/tree/master/examples/python/compression
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/async_streaming
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/data_transmission
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/debug
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/errors
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/flow_control
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/health_checking
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/hellostreamingworld
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/timeout
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/debug
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/errors
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/flow_control
+    - [x] https://github.com/grpc/grpc/tree/master/examples/python/health_checking
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/interceptors
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/keep_alive
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/lb_policies
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/metadata
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/observability
+    - [ ] https://github.com/grpc/grpc/blob/master/examples/python/helloworld/greeter_server_with_reflection.py
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/retry
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/wait_for_ready
+
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/async_streaming
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/data_transmission
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/hellostreamingworld
+    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/lb_policies
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/multiplex
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/multiprocessing
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/no_codegen
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/observability
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/retry
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/timeout
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/uds
-    - [ ] https://github.com/grpc/grpc/tree/master/examples/python/wait_for_ready
     - [ ] https://github.com/grpc/grpc/tree/master/examples/python/xds
 
 ## Future
