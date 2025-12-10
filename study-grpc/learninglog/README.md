@@ -6,6 +6,7 @@ In this folder I'm storing what pages I have read, noting key points, possible f
 
 ## learninglogs
 
+- [log_20251210.md](./log_20251210.md)
 - [log_20251209.md](./log_20251209.md)
 - [log_20251208.md](./log_20251208.md)
 - [log_20251205.md](./log_20251205.md)
@@ -14,6 +15,7 @@ In this folder I'm storing what pages I have read, noting key points, possible f
 
 ## projects
 
+- [Project 2 - gRPC python guides practice](../project_2/README.md)
 - [Project 1 - gRPC python documentation practice](../project_1/README.md)
 
 ## changelogs

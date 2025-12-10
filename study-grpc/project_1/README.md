@@ -24,6 +24,16 @@ pip install -r requirements.txt
 
 `python -m grpc_tools.protoc -Idevice_controller/grpc_python=device_controller/protos --python_out=. --grpc_python_out=. --pyi_out=. device_controller/protos/device_controller.proto`
 
+## Covered gRPC functionalities
+
+- splitting project code into several folders (protos, grpc_python, server, client)
+- create and serve 4 kinds of RPC methods
+- call 4 kinds of RPC methods
+- sync server and client implementations
+
+## TODO:
+- create async server and client implementations
+
 ## Changelog
 
 - [2025/12/05](./changelog/log_20251205.md)

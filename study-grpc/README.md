@@ -11,7 +11,10 @@ Here I'm logging my per day learning experience [learninglog/readme.md](learning
 ## Documentation and other important links
 
 Documentation - https://grpc.io/docs/
+- check for updates - https://github.com/grpc/grpc/releases
 
 Python Reference - https://grpc.github.io/grpc/python/
 
 Protobuf Docs - https://protobuf.dev/
+- check for updates - https://protobuf.dev/news/ , https://github.com/protocolbuffers/protobuf/releases
+
