@@ -1,0 +1,46 @@
+- client
+    - [ ] https://docs.aiohttp.org/en/stable/client_quickstart.html
+    - [ ] https://docs.aiohttp.org/en/stable/client_advanced.html
+    - [ ] https://docs.aiohttp.org/en/stable/client_middleware_cookbook.html
+    - [ ] https://docs.aiohttp.org/en/stable/client_reference.html
+    - [ ] https://docs.aiohttp.org/en/stable/tracing_reference.html
+    - [ ] https://docs.aiohttp.org/en/stable/http_request_lifecycle.html
+- server
+    - [ ] https://docs.aiohttp.org/en/stable/web.html#module-aiohttp.web
+    - [ ] https://demos.aiohttp.org/
+    - web quick start
+        - [ ] https://docs.aiohttp.org/en/stable/web_quickstart.html
+    - advanced
+        - [ ] https://docs.aiohttp.org/en/stable/web_advanced.html
+    - low level
+        - [ ] https://docs.aiohttp.org/en/stable/web_lowlevel.html
+    - reference
+        - [ ] https://docs.aiohttp.org/en/stable/web_reference.html
+    - logging
+        - [ ] https://docs.aiohttp.org/en/stable/logging.html
+    - testing
+        - [ ] https://docs.aiohttp.org/en/stable/testing.html
+    - deployment
+        - [ ] https://docs.aiohttp.org/en/stable/deployment.html
+- utilities
+    - [ ] https://docs.aiohttp.org/en/stable/utilities.html#utilities
+    - [ ] https://docs.aiohttp.org/en/stable/abc.html
+    - [ ] https://docs.aiohttp.org/en/stable/multipart.html
+    - [ ] https://docs.aiohttp.org/en/stable/multipart_reference.html
+    - [ ] https://docs.aiohttp.org/en/stable/streams.html
+    - [ ] https://docs.aiohttp.org/en/stable/structures.html
+    - [ ] https://docs.aiohttp.org/en/stable/websocket_utilities.html
+- faq
+    - [ ] https://docs.aiohttp.org/en/stable/faq.html
+- misc.
+    - [ ] https://docs.aiohttp.org/en/stable/misc.html
+    - [ ] https://docs.aiohttp.org/en/stable/essays.html
+    - [ ] https://docs.aiohttp.org/en/stable/new_router.html
+    - [ ] https://docs.aiohttp.org/en/stable/whats_new_1_1.html
+    - [ ] https://docs.aiohttp.org/en/stable/migration_to_2xx.html
+    - [ ] https://docs.aiohttp.org/en/stable/whats_new_3_0.html
+    - [ ] https://docs.aiohttp.org/en/stable/glossary.html
+    - [ ] https://docs.aiohttp.org/en/stable/changes.html
+    - [ ] https://docs.aiohttp.org/en/stable/genindex.html
+    - [ ] https://docs.aiohttp.org/en/stable/py-modindex.html
+    - [ ] https://docs.aiohttp.org/en/stable/search.html
