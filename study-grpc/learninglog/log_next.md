@@ -4,9 +4,9 @@
 
 ### Protobuf
 
-- [ ] https://protobuf.dev/
-- [ ] https://protobuf.dev/history/
-- [ ] https://protobuf.dev/overview/
+- [x] https://protobuf.dev/
+- [x] https://protobuf.dev/history/
+- [x] https://protobuf.dev/overview/
 
 - [ ] https://protobuf.dev/best-practices/
 - [ ] https://protobuf.dev/best-practices/1-1-1/
@@ -64,64 +64,67 @@
 - [ ] https://protobuf.dev/support/migration/
 - [ ] https://protobuf.dev/support/version-support/
 
+### WebRTC
+- [ ] Create study plan for https://webrtc.org/
+
 ### gRPC blog and misc.
 - [ ] https://grpc.io/showcase/
 - [ ] https://grpc.io/videos/
 
-- [ ] https://grpc.io/blog/a-short-introduction-to-channelz/
-- [ ] https://grpc.io/blog/bazel-rules-protobuf/
-- [ ] https://grpc.io/blog/beta-release/
-- [ ] https://grpc.io/blog/cmake-improvements/
-- [ ] https://grpc.io/blog/community-meeting-update/
-- [ ] https://grpc.io/blog/coreos/
-- [ ] https://grpc.io/blog/deadlines/
-- [ ] https://grpc.io/blog/ga-announcement/
-- [ ] https://grpc.io/blog/graceful-cleanup-junit-tests/
-- [ ] https://grpc.io/blog/grpc-and-ai/
-- [ ] https://grpc.io/blog/grpc-cloud-run/
-- [ ] https://grpc.io/blog/grpc-csharp-future/
-- [ ] https://grpc.io/blog/grpc-day-2023/
-- [ ] https://grpc.io/blog/grpc-dotnet-build/
-- [ ] https://grpc.io/blog/grpc-flatbuffers/
-- [ ] https://grpc.io/blog/grpc-go-engineering-practices/
-- [ ] https://grpc.io/blog/grpc-go-perf-improvements/
+- [x] https://grpc.io/blog/grpconf-2025-announcement/
+- [x] https://grpc.io/blog/robotics/
+- [x] https://grpc.io/blog/grpc-and-ai/
+- [ ] https://grpc.io/blog/grpconf-2024-videos/
 - [ ] https://grpc.io/blog/grpc-io-announce/
-- [ ] https://grpc.io/blog/grpc-js-1.0/
-- [ ] https://grpc.io/blog/grpc-load-balancing/
+- [ ] https://grpc.io/blog/proxyless-grpc/
+- [ ] https://grpc.io/blog/grpconf-2024-schedule/
+- [ ] https://grpc.io/blog/grpc-day-2023/
+- [ ] https://grpc.io/blog/postman-grpcweb/
+- [ ] https://grpc.io/blog/grpconf-2023-videos/
+- [ ] https://grpc.io/blog/grpconf-2023-schedule/
+- [ ] https://grpc.io/blog/grpconf-2023-announcement/
+- [ ] https://grpc.io/blog/performance-benchmarks-gke/
 - [ ] https://grpc.io/blog/grpc-on-arm64/
+- [ ] https://grpc.io/blog/grpc-csharp-future/
+- [ ] https://grpc.io/blog/wireshark/
+- [ ] https://grpc.io/blog/grpc-web-interceptor/
+- [ ] https://grpc.io/blog/grpc-js-1.0/
+- [ ] https://grpc.io/blog/kotlin-meet-grpc/
+- [ ] https://grpc.io/blog/grpc-cloud-run/
+- [ ] https://grpc.io/blog/cmake-improvements/
 - [ ] https://grpc.io/blog/grpc-on-dotnetcore/
-- [ ] https://grpc.io/blog/grpc-on-http2/
+- [ ] https://grpc.io/blog/hello-pancakes/
+- [ ] https://grpc.io/blog/state-of-grpc-web/
 - [ ] https://grpc.io/blog/grpc-stacks/
 - [ ] https://grpc.io/blog/grpc-web-ga/
-- [ ] https://grpc.io/blog/grpc-web-interceptor/
+- [ ] https://grpc.io/blog/a-short-introduction-to-channelz/
+- [ ] https://grpc.io/blog/grpc-on-http2/
 - [ ] https://grpc.io/blog/grpc-with-json/
-- [ ] https://grpc.io/blog/grpconf-2023-announcement/
-- [ ] https://grpc.io/blog/grpconf-2023-schedule/
-- [ ] https://grpc.io/blog/grpconf-2023-videos/
-- [ ] https://grpc.io/blog/grpconf-2024-schedule/
-- [ ] https://grpc.io/blog/grpconf-2024-videos/
-- [ ] https://grpc.io/blog/grpconf-2025-announcement/
-- [ ] https://grpc.io/blog/hello-pancakes/
-- [ ] https://grpc.io/blog/helm-grpc/
-- [ ] https://grpc.io/blog/installation/
-- [ ] https://grpc.io/blog/kotlin-gradle-projects/
-- [ ] https://grpc.io/blog/kotlin-meet-grpc/
-- [ ] https://grpc.io/blog/meetup-kit/
-- [ ] https://grpc.io/blog/mobile-benchmarks/
-- [ ] https://grpc.io/blog/optimizing-grpc-part-1/
-- [ ] https://grpc.io/blog/optimizing-grpc-part-2/
-- [ ] https://grpc.io/blog/performance-benchmarks-gke/
-- [ ] https://grpc.io/blog/postman-grpcweb/
-- [ ] https://grpc.io/blog/principles/
-- [ ] https://grpc.io/blog/proxyless-grpc/
-- [ ] https://grpc.io/blog/pubsub/
-- [ ] https://grpc.io/blog/robotics/
-- [ ] https://grpc.io/blog/state-of-grpc-web/
 - [ ] https://grpc.io/blog/take-the-grpc-survey/
-- [ ] https://grpc.io/blog/vendasta/
-- [ ] https://grpc.io/blog/vsco/
-- [ ] https://grpc.io/blog/wireshark/
+- [ ] https://grpc.io/blog/grpc-dotnet-build/
+- [ ] https://grpc.io/blog/graceful-cleanup-junit-tests/
+- [ ] https://grpc.io/blog/kotlin-gradle-projects/
+- [ ] https://grpc.io/blog/optimizing-grpc-part-2/
+- [ ] https://grpc.io/blog/optimizing-grpc-part-1/
+- [ ] https://grpc.io/blog/deadlines/
+- [ ] https://grpc.io/blog/grpc-go-engineering-practices/
+- [ ] https://grpc.io/blog/meetup-kit/
+- [ ] https://grpc.io/blog/grpc-go-perf-improvements/
+- [ ] https://grpc.io/blog/grpc-flatbuffers/
+- [ ] https://grpc.io/blog/community-meeting-update/
+- [ ] https://grpc.io/blog/grpc-load-balancing/
+- [ ] https://grpc.io/blog/helm-grpc/
 - [ ] https://grpc.io/blog/yikyak/
+- [ ] https://grpc.io/blog/bazel-rules-protobuf/
+- [ ] https://grpc.io/blog/vsco/
+- [ ] https://grpc.io/blog/vendasta/
+- [ ] https://grpc.io/blog/ga-announcement/
+- [ ] https://grpc.io/blog/mobile-benchmarks/
+- [ ] https://grpc.io/blog/coreos/
+- [ ] https://grpc.io/blog/installation/
+- [ ] https://grpc.io/blog/pubsub/
+- [ ] https://grpc.io/blog/beta-release/
+- [ ] https://grpc.io/blog/principles/
 
 ### other
 - [ ] start reading papers (examples for gRPC):
