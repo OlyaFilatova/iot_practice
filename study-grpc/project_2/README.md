@@ -11,12 +11,66 @@ Its development is currently in progress.
 ```sh
 python3 -m venv venv
 source venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+### Generate certs
+
+Make sure openssl is installed
+`openssl --version`
+
+To install on Ubuntu/Debian
+`sudo apt-get install openssl`
+
+To install on MacOS
+`brew install openssl`
+
+Run generation script
+
+```sh
+cd control_and_telemetry/security
+chmod +x create_certs.sh
+./create_certs.sh
+```
+
+### Running project
+
+1. Start Docker
+2. cd to `study-grpc/project_2`
+3. run `docker-compose -f docker-compose.yml up -d`
+4. read terminal outputs in containers
+
+### Generates Python gRPC code from .proto files
+
+```sh
+chmod +x generate_proto.sh
+./generate_proto.sh
+```
+
+## Project folder structure
+```
+control_and_telemetry/
+│
+├── protos/
+│
+├── grpc_python/
+│
+├── security/
+│   ├── create_certs.sh
+│   └── certs/
+│       ├── ca/
+│       ├── client/
+│       ├── server/
+│       └── jwt/
+│
+├── generate_proto.sh
+└── README.md
 ```
 
 ## Changelog
 
-- 
+- [20251213](./changelog/log_20251213.md)
 
 ## gRPC Functionalities to implement
 

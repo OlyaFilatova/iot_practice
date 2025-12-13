@@ -29,10 +29,7 @@ pip install -r requirements.txt
 - splitting project code into several folders (protos, grpc_python, server, client)
 - create and serve 4 kinds of RPC methods
 - call 4 kinds of RPC methods
-- sync server and client implementations
-
-## TODO:
-- create async server and client implementations
+- synchronous server and client implementations
 
 ## Changelog
 

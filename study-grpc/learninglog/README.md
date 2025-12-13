@@ -21,5 +21,6 @@ In this folder I'm storing what pages I have read, noting key points, possible f
 
 ## changelogs
 
+- [Project 2 - log_20251213.md](../project_2/changelog/log_20251213.md)
 - [Project 1 - log_20251205.md](../project_1/changelog/log_20251205.md)
 - [Project 1 - log_20251204.md](../project_1/changelog/log_20251204.md)

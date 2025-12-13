@@ -1,4 +1,3 @@
-- [ ] update project_1 to use async approach
 - [ ] implement in project_2 knowledge learnt from guides
 - [ ] python gRPC reference https://grpc.io/docs/languages/python/api/
 

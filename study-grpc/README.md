@@ -3,6 +3,7 @@
 ## Projects
 
 1. [Device Management](./project_1/README.md)
+1. [Distributed Robotics Control & Telemetry System](./project_2/README.md)
 
 ## My Learning Path
 
