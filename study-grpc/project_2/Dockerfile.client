@@ -29,6 +29,8 @@ RUN pip install --no-cache-dir --upgrade pip \
 # -------------------------
 COPY ./control_and_telemetry/__init__.py /app/control_and_telemetry/__init__.py
 COPY ./control_and_telemetry/grpc_python /app/control_and_telemetry/grpc_python
+COPY ./control_and_telemetry/auth /app/control_and_telemetry/auth
+COPY ./control_and_telemetry/security /app/control_and_telemetry/security
 COPY ./control_and_telemetry/client /app/control_and_telemetry/client
 
 # -------------------------

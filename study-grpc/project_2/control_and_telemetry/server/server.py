@@ -1,7 +1,9 @@
 import asyncio
 import grpc
 
-from ..grpc_python import control_pb2_grpc, control_pb2, telemetry_pb2_grpc, telemetry_pb2, admin_pb2_grpc, admin_pb2
+from control_and_telemetry.server.auth import TokenValidationInterceptor, create_ssl_credentials
+
+from control_and_telemetry.grpc_python import control_pb2_grpc, control_pb2, telemetry_pb2_grpc, telemetry_pb2, admin_pb2_grpc, admin_pb2
 
 class ControlServiceAsync(control_pb2_grpc.ControlServiceServicer):
     async def SetMotor(self, request, context):
@@ -50,13 +52,17 @@ class AdminServiceAsync(admin_pb2_grpc.AdminServiceServicer):
         return admin_pb2.RestartResponse(accepted=True)
 
 async def serve():
-    server = grpc.aio.server()
+    server = grpc.aio.server(
+        interceptors=[TokenValidationInterceptor()]
+    )
 
     control_pb2_grpc.add_ControlServiceServicer_to_server(ControlServiceAsync(), server)
     telemetry_pb2_grpc.add_TelemetryServiceServicer_to_server(TelemetryServiceAsync(), server)
     admin_pb2_grpc.add_AdminServiceServicer_to_server(AdminServiceAsync(), server)
 
-    server.add_insecure_port('[::]:50051')
+    server.add_secure_port(
+        '[::]:50051', create_ssl_credentials()
+    )
     print("Async gRPC server starting on port 50051...")
     await server.start()
     try:

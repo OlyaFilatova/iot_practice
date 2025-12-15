@@ -1,6 +1,9 @@
 import asyncio
+import contextlib
 import os
 import grpc
+
+from control_and_telemetry.client.auth import create_credentials
 from control_and_telemetry.grpc_python import control_pb2_grpc, control_pb2, telemetry_pb2_grpc, telemetry_pb2, admin_pb2_grpc, admin_pb2
 from control_and_telemetry.grpc_python.common.robot_types_pb2 import MotorCommand
 
@@ -12,8 +15,13 @@ METADATA = (
     ("x-client-id", "client-1")
 )
 
+@contextlib.asynccontextmanager
+async def create_client_channel(addr):
+    channel = grpc.aio.secure_channel(addr, create_credentials())
+    yield channel
+
 async def control_client():
-    async with grpc.aio.insecure_channel(SERVER_ADDRESS) as channel:
+    async with create_client_channel(SERVER_ADDRESS) as channel:
         stub = control_pb2_grpc.ControlServiceStub(channel)
 
         response = await stub.SetMotor(
@@ -31,7 +39,7 @@ async def control_client():
             print(f"[ControlClient] LiveControl response: {resp}")
 
 async def telemetry_client():
-    async with grpc.aio.insecure_channel(SERVER_ADDRESS) as channel:
+    async with create_client_channel(SERVER_ADDRESS) as channel:
         stub = telemetry_pb2_grpc.TelemetryServiceStub(channel)
 
         request = telemetry_pb2.TelemetrySubscription(sensor_ids=["sensor_0", "sensor_1"])
@@ -39,7 +47,7 @@ async def telemetry_client():
             print(f"[TelemetryClient] Received telemetry: {msg}")
 
 async def admin_client():
-    async with grpc.aio.insecure_channel(SERVER_ADDRESS) as channel:
+    async with create_client_channel(SERVER_ADDRESS) as channel:
         stub = admin_pb2_grpc.AdminServiceStub(channel)
 
         response = await stub.GetStatus(admin_pb2.GetStatusRequest(), metadata=METADATA)

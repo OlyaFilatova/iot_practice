@@ -8,6 +8,12 @@
 # 4) JWT signing key pair (RS256)
 # ------------------------------------------------------------------
 
+# Get the directory where the script is located
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+
+# Change the current working directory to SCRIPT_DIR
+cd "$SCRIPT_DIR"
+
 set -euo pipefail
 
 # -------------------------
@@ -19,7 +25,7 @@ SERVER_DIR="$CERTS_DIR/server"
 CLIENT_DIR="$CERTS_DIR/client"
 JWT_DIR="$CERTS_DIR/jwt"
 
-SERVER_CN="robotics-server"
+SERVER_CN="server_container"
 CLIENT_CN="robotics-client"
 JWT_KEY_NAME="jwtRS256"
 
@@ -28,7 +34,6 @@ RSA_BITS=4096
 
 # Optional SAN (Subject Alternative Name) for server cert
 SAN_DNS="server"
-SAN_IP="127.0.0.1"
 
 # -------------------------
 # CREATE DIRECTORY STRUCTURE
@@ -63,7 +68,11 @@ openssl req -new -key "$SERVER_DIR/server.key" \
 
 # SAN config
 cat > "$SERVER_DIR/server.ext" <<EOF
-subjectAltName=DNS:$SAN_DNS,IP:$SAN_IP
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1=$SERVER_CN
+DNS.2=localhost
 EOF
 
 # Sign CSR with CA
