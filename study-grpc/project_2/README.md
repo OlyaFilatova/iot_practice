@@ -53,8 +53,13 @@ chmod +x generate_proto.sh
 control_and_telemetry/
 │
 ├── protos/
+│   └── common/
+│
+├── client/
+│   └── client.py
 │
 ├── grpc_python/
+│   └── common/
 │
 ├── security/
 │   ├── create_certs.sh
@@ -64,12 +69,15 @@ control_and_telemetry/
 │       ├── server/
 │       └── jwt/
 │
-├── generate_proto.sh
-└── README.md
+├── server/
+│   └── server.py
+│
+└── generate_proto.sh
 ```
 
 ## Changelog
 
+- [20251215](./changelog/log_20251215.md)
 - [20251213](./changelog/log_20251213.md)
 
 ## gRPC Functionalities to implement
@@ -98,6 +106,8 @@ control_and_telemetry/
 
 ## Learninglog
 
+- [2025/12/15](../learninglog/log_20251215.md)
+- [2025/12/13](../learninglog/log_20251213.md)
 - [2025/12/10](../learninglog/log_20251210.md)
 - [2025/12/09](../learninglog/log_20251209.md)
 - [2025/12/08](../learninglog/log_20251208.md)

@@ -34,4 +34,5 @@ COPY ./control_and_telemetry/client /app/control_and_telemetry/client
 # -------------------------
 # DEFAULT COMMAND
 # -------------------------
-ENTRYPOINT ["python", "-m", "control_and_telemetry.client.dummy_client"]
+ENV PYTHONPATH=/app/control_and_telemetry/grpc_python
+ENTRYPOINT ["python", "-m", "control_and_telemetry.client.client"]

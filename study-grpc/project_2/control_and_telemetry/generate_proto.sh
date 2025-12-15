@@ -17,6 +17,7 @@ PYTHON_MODULE_NAME="control_and_telemetry/grpc_python"
 
 # Ensure directories exist
 mkdir -p "$PROTO_OUT_DIR"
+mkdir -p "$PROTO_OUT_DIR/common"
 
 # -------------------------
 # CHECK DEPENDENCIES
@@ -39,21 +40,20 @@ python3 -m pip install --upgrade mypy-protobuf
 # -------------------------
 echo "Cleaning previous generated files..."
 find "$PROTO_OUT_DIR" -type f -name "*.py" -delete
+find "$PROTO_OUT_DIR" -type f -name "*.pyi" -delete
 
 # -------------------------
 # GENERATE GRPC PYTHON CODE
 # -------------------------
 echo "Generating Python gRPC code from .proto files..."
 
-for proto_file in "$PROTO_SRC_DIR"/*.proto; do
-    echo "Processing $proto_file..."
-    python3 -m grpc_tools.protoc \
-        -I$PYTHON_MODULE_NAME="$PROTO_SRC_DIR" \
-        --python_out=. \
-        --grpc_python_out=. \
-        --pyi_out=. \
-        "$proto_file"
-done
+echo "Processing files..."
+python3 -m grpc_tools.protoc \
+    -I "$PROTO_SRC_DIR" \
+    --python_out=$PYTHON_MODULE_NAME \
+    --grpc_python_out=$PYTHON_MODULE_NAME \
+    --pyi_out=$PYTHON_MODULE_NAME \
+    $(find $PROTO_SRC_DIR -name "*.proto")
 
 # -------------------------
 # generate __init__.py files for module imports

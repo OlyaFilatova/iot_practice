@@ -6,6 +6,8 @@ In this folder I'm storing what pages I have read, noting key points, possible f
 
 ## learninglogs
 
+- [log_20251215.md](./log_20251215.md)
+- [log_20251213.md](./log_20251213.md)
 - [log_20251211.md](./log_20251211.md)
 - [log_20251210.md](./log_20251210.md)
 - [log_20251209.md](./log_20251209.md)
@@ -21,6 +23,7 @@ In this folder I'm storing what pages I have read, noting key points, possible f
 
 ## changelogs
 
+- [Project 2 - log_20251215.md](../project_2/changelog/log_20251215.md)
 - [Project 2 - log_20251213.md](../project_2/changelog/log_20251213.md)
 - [Project 1 - log_20251205.md](../project_1/changelog/log_20251205.md)
 - [Project 1 - log_20251204.md](../project_1/changelog/log_20251204.md)

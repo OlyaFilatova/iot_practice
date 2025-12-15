@@ -42,4 +42,5 @@ EXPOSE 50051
 # -------------------------
 # ENTRYPOINT
 # -------------------------
-ENTRYPOINT ["python", "-m", "control_and_telemetry.server.dummy_server"]
+ENV PYTHONPATH=/app/control_and_telemetry/grpc_python
+ENTRYPOINT ["python", "-m", "control_and_telemetry.server.server"]

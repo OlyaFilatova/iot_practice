@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-from control_and_telemetry.grpc_python import dummy_pb2 as control__and__telemetry_dot_grpc__python_dot_dummy__pb2
+import telemetry_pb2 as telemetry__pb2
 
 GRPC_GENERATED_VERSION = '1.76.0'
 GRPC_VERSION = grpc.__version__
@@ -18,14 +18,14 @@ except ImportError:
 if _version_not_supported:
     raise RuntimeError(
         f'The grpc package installed is at version {GRPC_VERSION},'
-        + ' but the generated code in control_and_telemetry/grpc_python/dummy_pb2_grpc.py depends on'
+        + ' but the generated code in telemetry_pb2_grpc.py depends on'
         + f' grpcio>={GRPC_GENERATED_VERSION}.'
         + f' Please upgrade your grpc module to grpcio>={GRPC_GENERATED_VERSION}'
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
     )
 
 
-class DummyServiceStub(object):
+class TelemetryServiceStub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -34,43 +34,43 @@ class DummyServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.GetResponse = channel.unary_unary(
-                '/DummyService/GetResponse',
-                request_serializer=control__and__telemetry_dot_grpc__python_dot_dummy__pb2.Empty.SerializeToString,
-                response_deserializer=control__and__telemetry_dot_grpc__python_dot_dummy__pb2.Dummy.FromString,
+        self.SubscribeTelemetry = channel.unary_stream(
+                '/telemetry.TelemetryService/SubscribeTelemetry',
+                request_serializer=telemetry__pb2.TelemetrySubscription.SerializeToString,
+                response_deserializer=telemetry__pb2.TelemetryMessage.FromString,
                 _registered_method=True)
 
 
-class DummyServiceServicer(object):
+class TelemetryServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def GetResponse(self, request, context):
+    def SubscribeTelemetry(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_DummyServiceServicer_to_server(servicer, server):
+def add_TelemetryServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'GetResponse': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetResponse,
-                    request_deserializer=control__and__telemetry_dot_grpc__python_dot_dummy__pb2.Empty.FromString,
-                    response_serializer=control__and__telemetry_dot_grpc__python_dot_dummy__pb2.Dummy.SerializeToString,
+            'SubscribeTelemetry': grpc.unary_stream_rpc_method_handler(
+                    servicer.SubscribeTelemetry,
+                    request_deserializer=telemetry__pb2.TelemetrySubscription.FromString,
+                    response_serializer=telemetry__pb2.TelemetryMessage.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'DummyService', rpc_method_handlers)
+            'telemetry.TelemetryService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
-    server.add_registered_method_handlers('DummyService', rpc_method_handlers)
+    server.add_registered_method_handlers('telemetry.TelemetryService', rpc_method_handlers)
 
 
  # This class is part of an EXPERIMENTAL API.
-class DummyService(object):
+class TelemetryService(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def GetResponse(request,
+    def SubscribeTelemetry(request,
             target,
             options=(),
             channel_credentials=None,
@@ -80,12 +80,12 @@ class DummyService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(
+        return grpc.experimental.unary_stream(
             request,
             target,
-            '/DummyService/GetResponse',
-            control__and__telemetry_dot_grpc__python_dot_dummy__pb2.Empty.SerializeToString,
-            control__and__telemetry_dot_grpc__python_dot_dummy__pb2.Dummy.FromString,
+            '/telemetry.TelemetryService/SubscribeTelemetry',
+            telemetry__pb2.TelemetrySubscription.SerializeToString,
+            telemetry__pb2.TelemetryMessage.FromString,
             options,
             channel_credentials,
             insecure,
